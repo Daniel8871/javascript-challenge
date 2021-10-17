@@ -4,15 +4,12 @@ var tableData = data;
 // select the table 
 var tbody = d3.select("tbody");
 
-var count = 0;
-
 // Building table function 
 function buildTable(x) {
     x.forEach(ufoReport => {
 
         // Adding rows 
-        var row = tbody.append("tr");
-        count += 1;        
+        var row = tbody.append("tr");       
 
         // Gathering data and appending to cells
         Object.entries(ufoReport).forEach(([key,value]) => {
