@@ -4,6 +4,8 @@ var tableData = data;
 // select the table 
 var tbody = d3.select("tbody");
 
+var count = 0;
+
 // Building table function 
 function buildTable(x) {
     x.forEach(ufoReport => {
